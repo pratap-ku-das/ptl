@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Port Translogistic Pvt Ltd</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+<!-- NAVBAR -->
+<nav class="bg-blue-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- LEFT SIDE -->
+    <div class="flex items-center gap-3">
+      <img src="https://porttranslogistics.com/wp-content/uploads/2021/11/ptl-logo.png" class="h-10 w-10">
+      <h1 class="text-white font-semibold text-lg">
+        Port Translogistics Pvt Ltd
+      </h1>
+    </div>
+    <ul class="flex gap-6">
+      <li><a href="#home" class="hover:text-orange-400">Home</a></li>
+      <li><a href="#about" class="hover:text-orange-400">About</a></li>
+      <li><a href="#services" class="hover:text-orange-400">Services</a></li>
+      <li><a href="#team" class="hover:text-orange-400">Team</a></li>
+      <li><a href="#tracking-contact" class="hover:text-orange-400">Tracking</a></li>
+      <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
+    </ul>
+    <div>
+      <a href="#contact" class="bg-orange-500 text-white px-5 py-2 rounded-md font-semibold hover:bg-orange-600 inline-block">
+        Get a quote
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER STRIP -->
+<section class="promo-banner">
+  <div class="promo-inner">
+    <span class="promo-title">Veterans Venture</span>
+    <span class="promo-separator">-</span>
+    <span class="promo-tagline">Delivering Excellence Across Ports</span>
+  </div>
+</section>
+
+<!-- HERO SLIDER -->
+<section id="home" class="hero-slider">
+  <div class="hero-slides">
+    <div class="hero-slide is-active" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+      <div class="hero-overlay">
+        <h2>Welcome to PTL</h2>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1496560736447-4e85c9dd71e3');">
+      <div class="hero-overlay">
+        <h2>Visit Our Services</h2>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e');">
+      <div class="hero-overlay">
+        <h2>24x7 Service</h2>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');">
+      <div class="hero-overlay">
+        <h2>Meet Our Team</h2>
+      </div>
+    </div>
+  </div>
+  <button class="hero-nav hero-prev" aria-label="Previous slide" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="hero-nav hero-next" aria-label="Next slide" onclick="changeSlide(1)">&#10095;</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div class="text-left">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-gray-700 mb-6">
+        Port Translogistic Pvt Ltd is a leading logistics and port handling company,
+        providing reliable and efficient transportation solutions across major ports.
+        Our mission is to deliver excellence through innovation, speed, and trust.
+      </p>
+      <a href="#contact" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+        Learn More
+      </a>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="relative">
+        <img src="https://porttranslogistics.com/wp-content/uploads/2023/05/1b39747a-a5ab-4116-a0d9-2aecdb322857.jpg" alt="Container yard" class="rounded-lg shadow-lg h-44 w-full object-cover">
+        <a href="#services" class="absolute bottom-3 left-3 bg-orange-500 text-white px-4 py-1 rounded-full text-sm hover:bg-orange-600">
+          View
+        </a>
+      </div>
+      <div class="relative">
+        <img src="https://porttranslogistics.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-18-at-14.29.18.jpeg" alt="Cargo truck" class="rounded-lg shadow-lg h-44 w-full object-cover">
+        <a href="#services" class="absolute bottom-3 left-3 bg-orange-500 text-white px-4 py-1 rounded-full text-sm hover:bg-orange-600">
+          View
+        </a>
+      </div>
+      <div class="relative col-span-2">
+        <img src="https://porttranslogistics.com/wp-content/uploads/2024/02/Koira-Pics-3.jpeg" alt="Port cranes" class="rounded-lg shadow-lg h-48 w-full object-cover">
+        <a href="#services" class="absolute bottom-3 left-3 bg-orange-500 text-white px-4 py-1 rounded-full text-sm hover:bg-orange-600">
+          Explore
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-16 container mx-auto text-center">
+  <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+  <div class="grid md:grid-cols-4 gap-6">
+    
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl">
+      <h3 class="font-bold text-lg mb-2">Port Handling</h3>
+      <p>Efficient cargo handling at all major ports.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh_uo1wxSAJx_SjwTz92fHbbt374lXIE5OkA&s" alt="Port Handling" class="rounded-lg shadow-lg h-48 w-full object-cover">
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl">
+      <h3 class="font-bold text-lg mb-2">Freight Forwarding</h3>
+      <p>Domestic and international freight solutions.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXyNFL4IuVVfAQJPM3G4WiGKI5Vv4ZtKPVA&s" alt="Freight Forwarding" class="rounded-lg shadow-lg h-48 w-full object-cover">
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl">
+      <h3 class="font-bold text-lg mb-2">Warehousing</h3>
+      <p>Secure and scalable storage facilities.</p>
+      <img src="https://www.navata.com/cms/wp-content/uploads/2022/12/Present-with-ease-16.png" alt="Warehousing" class="rounded-lg shadow-lg h-48 w-full object-cover">   
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl">
+      <h3 class="font-bold text-lg mb-2">Custom Clearance</h3>
+      <p>Fast and compliant customs processing.</p>
+      <img src="https://shrisaitechsolutions.co.in/projects/hncadmin/upload/251124051836What-are-the-Types-of-Customs-Clearance-Services.jpg" alt="Custom Clearance" class="rounded-lg shadow-lg h-48 w-full object-cover">
+    </div>
+
+  </div>
+</section>
+
+<section class="clients-section">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- TITLE -->
+    <h2 class="clients-title">Our Clients</h2>
+
+    <!-- GRID -->
+    <div class="clients-grid">
+
+      <!-- CLIENT CARD -->
+      <div class="client-card">
+        <img src="images/adani.png" alt="Adani" class="client-logo">
+      </div>
+
+      <div class="client-card">
+        <img src="images/sp.png" alt="SP Group" class="client-logo">
+      </div>
+
+      <div class="client-card">
+        <img src="images/aditya.jpg" alt="Aditya Birla" class="client-logo">
+      </div>
+
+      <div class="client-card">
+        <img src="images/smc.png" alt="SMC Power" class="client-logo">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="bg-blue-900 text-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-10">Our Capabilities</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div>
+      <h3 class="text-4xl font-bold text-orange-400">500+</h3>
+      <p>Shipments Delivered</p>
+    </div>
+
+    <div>
+      <h3 class="text-4xl font-bold text-orange-400">50+</h3>
+      <p>Happy Clients</p>
+    </div>
+
+    <div>
+      <h3 class="text-4xl font-bold text-orange-400">10+</h3>
+      <p>Ports Connected</p>
+    </div>
+
+  </div>
+</section>
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- TITLE -->
+    <h2 class="text-4xl font-bold mb-4">Why Choose PTL</h2>
+    <p class="text-gray-600 mb-12">
+      Delivering reliable, efficient, and cost-effective logistics solutions across major ports.
+    </p>
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- CARD 1 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <div class="text-orange-500 text-4xl mb-4">🚢</div>
+        <h3 class="text-xl font-semibold mb-2">Industry Expertise</h3>
+        <p class="text-gray-600">
+          Years of experience in port handling and logistics ensure smooth and efficient operations.
+        </p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <div class="text-orange-500 text-4xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold mb-2">Fast & Reliable</h3>
+        <p class="text-gray-600">
+          We prioritize timely delivery with reliable transportation and real-time coordination.
+        </p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <div class="text-orange-500 text-4xl mb-4">💰</div>
+        <h3 class="text-xl font-semibold mb-2">Cost-Effective Solutions</h3>
+        <p class="text-gray-600">
+          Competitive pricing without compromising on quality and service standards.
+        </p>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <div class="text-orange-500 text-4xl mb-4">📦</div>
+        <h3 class="text-xl font-semibold mb-2">End-to-End Services</h3>
+        <p class="text-gray-600">
+          From port handling to final delivery, we manage the complete logistics chain.
+        </p>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <div class="text-orange-500 text-4xl mb-4">🛡️</div>
+        <h3 class="text-xl font-semibold mb-2">Safety & Compliance</h3>
+        <p class="text-gray-600">
+          Strict adherence to safety standards and regulatory compliance at every stage.
+        </p>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <div class="text-orange-500 text-4xl mb-4">🤝</div>
+        <h3 class="text-xl font-semibold mb-2">Trusted by Clients</h3>
+        <p class="text-gray-600">
+          Strong relationships with leading industries built on trust and performance.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- MEET OUR TEAM -->
+<section id="team" class="team-section">
+  <div class="team-wrapper">
+    <h2 class="team-title">Meet Our Team</h2>
+    <p class="team-subtitle">
+      Experienced professionals dedicated to delivering reliable logistics solutions.
+    </p>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/MD-.jpg" alt="Managing Director" class="team-photo">
+        <div class="team-info">
+          <h3>Anil Tripathi</h3>
+          <p>Managing Director</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/DR.jpeg" alt="Director" class="team-photo">
+        <div class="team-info">
+          <h3>Ankit Tripathi</h3>
+          <p>Director</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/AD.jpg" alt="Additional Director" class="team-photo">
+        <div class="team-info">
+          <h3>Jaydeep Dubey</h3>
+          <p>Additional Director</p>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="team-more-btn" onclick="openTeamPanel()">See More</button>
+  </div>
+</section>
+
+<!-- TEAM SOCIAL PANEL -->
+<div id="teamPanel" class="team-panel" aria-hidden="true">
+  <div class="team-panel-backdrop" onclick="closeTeamPanel()"></div>
+  <div class="team-panel-content" role="dialog" aria-modal="true" aria-labelledby="teamPanelTitle">
+    <button type="button" class="team-panel-close" aria-label="Close panel" onclick="closeTeamPanel()">X</button>
+    <h3 id="teamPanelTitle">Connect With Our Team</h3>
+    <p class="team-panel-subtitle">Follow us on social platforms</p>
+    <div class="team-social-grid">
+      <a class="team-social-card" href="#" aria-label="Facebook">
+        <img src="https://cdn.simpleicons.org/facebook/1877f2" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+      <a class="team-social-card" href="#" aria-label="Instagram">
+        <img src="https://cdn.simpleicons.org/instagram/e4405f" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+      <a class="team-social-card" href="#" aria-label="LinkedIn">
+        <img src="https://cdn.simpleicons.org/linkedin/0a66c2" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+      <a class="team-social-card" href="#" aria-label="X">
+        <img src="https://cdn.simpleicons.org/x/111111" alt="X">
+        <span>X</span>
+      </a>
+      <a class="team-social-card" href="#" aria-label="YouTube">
+        <img src="https://cdn.simpleicons.org/youtube/ff0000" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+      <a class="team-social-card" href="#" aria-label="WhatsApp">
+        <img src="https://cdn.simpleicons.org/whatsapp/25d366" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- TRACKING & CONTACT -->
+<section id="tracking-contact" class="py-16">
+  <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10">
+    <!-- TRACKING -->
+    <div class="text-center">
+      <h2 class="text-3xl font-bold mb-6">Track Your Shipment</h2>
+      <input id="trackInput" type="text" placeholder="Enter Tracking ID"
+        class="border p-3 rounded-lg w-full md:w-64">
+      <button onclick="trackShipment()" 
+        class="bg-blue-900 text-white px-6 py-3 ml-2 rounded-lg hover:bg-blue-800 mt-4 md:mt-0">
+        Track
+      </button>
+      <div id="result" class="mt-6 text-lg font-semibold"></div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="text-center" id="contact">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg">
+        <textarea placeholder="Message" class="w-full p-3 border rounded-lg"></textarea>
+        <button type="button" class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-blue-900 text-white text-center p-4">
+  <p>© 2026 Port Translogistic Pvt Ltd | All Rights Reserved</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function trackShipment() {
+  const id = document.getElementById("trackInput").value;
+  const result = document.getElementById("result");
+
+  if(id === "") {
+    result.innerHTML = "Please enter a Tracking ID";
+  } else {
+    result.innerHTML = "Status: In Transit 🚚 <br> Location: Kolkata Port";
+  }
+}
+
+const slides = document.querySelectorAll(".hero-slide");
+let currentSlide = 0;
+let sliderTimer = null;
+
+function showSlide(index) {
+  slides[currentSlide].classList.remove("is-active");
+  currentSlide = (index + slides.length) % slides.length;
+  slides[currentSlide].classList.add("is-active");
+}
+
+function resetTimer() {
+  clearInterval(sliderTimer);
+  sliderTimer = setInterval(() => showSlide(currentSlide + 1), 6000);
+}
+
+function changeSlide(step) {
+  showSlide(currentSlide + step);
+  resetTimer();
+}
+
+resetTimer();
+
+const teamPanel = document.getElementById("teamPanel");
+
+function openTeamPanel() {
+  if (!teamPanel) {
+    return;
+  }
+  teamPanel.classList.add("is-open");
+  teamPanel.setAttribute("aria-hidden", "false");
+}
+
+function closeTeamPanel() {
+  if (!teamPanel) {
+    return;
+  }
+  teamPanel.classList.remove("is-open");
+  teamPanel.setAttribute("aria-hidden", "true");
+}
+</script>
+
+</body>
+</html>
