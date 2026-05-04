@@ -1,0 +1,17 @@
+{
+  "name": "Port Translogistic Pvt Ltd",
+  "short_name": "PTL",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "theme_color": "#1e3a8a",
+  "background_color": "#f8fafc",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
