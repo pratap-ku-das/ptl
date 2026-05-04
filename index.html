@@ -29,7 +29,9 @@
         <span></span>
       </button>
     </div>
+    <div class="nav-backdrop" onclick="closeNavMenu()"></div>
     <div id="navMenu" class="nav-menu">
+      <button type="button" class="nav-close" aria-label="Close navigation menu" onclick="closeNavMenu()">×</button>
       <ul class="nav-links">
         <li><a href="#home" class="hover:text-orange-400" onclick="closeNavMenu()">Home</a></li>
         <li><a href="#about" class="hover:text-orange-400" onclick="closeNavMenu()">About</a></li>
@@ -394,14 +396,17 @@ if ('serviceWorker' in navigator) {
 
 const navMenu = document.getElementById("navMenu");
 const navToggle = document.querySelector(".nav-toggle");
+const navBackdrop = document.querySelector(".nav-backdrop");
 
 function updateNavState(isOpen) {
-  if (!navMenu || !navToggle) {
+  if (!navMenu || !navToggle || !navBackdrop) {
     return;
   }
 
   navMenu.classList.toggle("is-open", isOpen);
+  navBackdrop.classList.toggle("is-open", isOpen);
   navToggle.setAttribute("aria-expanded", String(isOpen));
+  document.body.classList.toggle("nav-open", isOpen);
 }
 
 function toggleNavMenu() {
@@ -418,6 +423,12 @@ function closeNavMenu() {
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 768) {
+    closeNavMenu();
+  }
+});
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
     closeNavMenu();
   }
 });
