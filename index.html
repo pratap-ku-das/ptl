@@ -17,26 +17,32 @@
 
 <!-- NAVBAR -->
 <nav class="bg-blue-900 text-white p-4 sticky top-0 z-50 shadow-lg">
-  <div class="container mx-auto flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
-    <!-- LEFT SIDE -->
-    <div class="flex items-center justify-center md:justify-start gap-3">
+  <div class="container mx-auto nav-shell">
+    <div class="nav-top-row">
       <img src="https://porttranslogistics.com/wp-content/uploads/2021/11/ptl-logo.png" class="h-10 w-10">
       <h1 class="text-white font-semibold text-lg text-center md:text-left">
         Port Translogistics Pvt Ltd
       </h1>
+      <button type="button" class="nav-toggle" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false" onclick="toggleNavMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <ul class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm md:text-base">
-      <li><a href="#home" class="hover:text-orange-400">Home</a></li>
-      <li><a href="#about" class="hover:text-orange-400">About</a></li>
-      <li><a href="#services" class="hover:text-orange-400">Services</a></li>
-      <li><a href="#team" class="hover:text-orange-400">Team</a></li>
-      <li><a href="#tracking-contact" class="hover:text-orange-400">Tracking</a></li>
-      <li><a href="#contact" class="hover:text-orange-400">Contact</a></li>
-    </ul>
-    <div class="flex justify-center md:justify-end">
-      <a href="#contact" class="bg-orange-500 text-white px-5 py-2 rounded-md font-semibold hover:bg-orange-600 inline-block w-full text-center md:w-auto">
-        Get a quote
-      </a>
+    <div id="navMenu" class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#home" class="hover:text-orange-400" onclick="closeNavMenu()">Home</a></li>
+        <li><a href="#about" class="hover:text-orange-400" onclick="closeNavMenu()">About</a></li>
+        <li><a href="#services" class="hover:text-orange-400" onclick="closeNavMenu()">Services</a></li>
+        <li><a href="#team" class="hover:text-orange-400" onclick="closeNavMenu()">Team</a></li>
+        <li><a href="#tracking-contact" class="hover:text-orange-400" onclick="closeNavMenu()">Tracking</a></li>
+        <li><a href="#contact" class="hover:text-orange-400" onclick="closeNavMenu()">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="bg-orange-500 text-white px-5 py-2 rounded-md font-semibold hover:bg-orange-600 inline-block w-full text-center md:w-auto" onclick="closeNavMenu()">
+          Get a quote
+        </a>
+      </div>
     </div>
   </div>
 </nav>
@@ -385,6 +391,36 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
+const navMenu = document.getElementById("navMenu");
+const navToggle = document.querySelector(".nav-toggle");
+
+function updateNavState(isOpen) {
+  if (!navMenu || !navToggle) {
+    return;
+  }
+
+  navMenu.classList.toggle("is-open", isOpen);
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+}
+
+function toggleNavMenu() {
+  if (!navMenu) {
+    return;
+  }
+
+  updateNavState(!navMenu.classList.contains("is-open"));
+}
+
+function closeNavMenu() {
+  updateNavState(false);
+}
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    closeNavMenu();
+  }
+});
 
 function trackShipment() {
   const id = document.getElementById("trackInput").value;
